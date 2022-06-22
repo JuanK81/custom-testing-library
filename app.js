@@ -1,22 +1,11 @@
-module.exports = {
-    forEach(arr, fn) {
-        // for (let i = 0; i < arr.length; i++) {
-        //     const value = arr[i];
+#!/usr/bin/env node
 
-        //     fn(value, i);
-        // }
-    
-        for (let index in arr) {
-            fn(arr[index], index);
-        }
-    },
-    map(arr, fn) {
-        const result = [];
+console.log('Running test');
 
-        for (let i = 0; i < arr.length; i++) {
-            result.push(fn(arr[i], i));
-        }
+//file collection
 
-        return result;
-    }
-};
+//enviromet setup
+
+//test execution
+
+//report results
