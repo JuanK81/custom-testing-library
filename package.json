@@ -18,5 +18,8 @@
   "homepage": "https://github.com/JuanK81/custom-testing-library#readme",
   "bin": {
     "tme": "app.js"
+  },
+  "dependencies": {
+    "chalk": "^4.1.2"
   }
 }
