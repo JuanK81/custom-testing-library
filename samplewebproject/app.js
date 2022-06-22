@@ -10,3 +10,5 @@ document.querySelector('form').addEventListener('submit', (e) => {
     header.innerHTML = 'Please enter a valid Email';
   }
 });
+
+

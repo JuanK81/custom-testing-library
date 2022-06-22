@@ -11,7 +11,7 @@ class Runner {
   }
 
   async runTests() {
-    
+
     for (let file of this.testFiles) {
         console.log(chalk.grey(`------- ${file.shortName} -------`));
 
@@ -23,10 +23,10 @@ class Runner {
         beforeEaches.push(fn);
       };
 
-      global.it = (desc, fn) => {
+      global.it = async  (desc, fn) => {
         beforeEaches.forEach((func) => func());
         try {
-          fn();
+          await fn();
           console.log(chalk.green(`\tOk - ${desc}`));
         } catch (err) {
             const message = err.message.replace(/\n/g, '\n\t\t');
